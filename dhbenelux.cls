@@ -12,7 +12,7 @@
 % - v1.0 -> v1.1
 %      ltfamily is no longer defined, switch renewcommand to newcommand
 %      switch form humannat to plainnat
-%
+% test
 %%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
