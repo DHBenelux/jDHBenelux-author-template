@@ -11,7 +11,6 @@
 %
 % - v1.0 -> v1.1
 %      ltfamily is no longer defined, switch renewcommand to newcommand
-%      switch form humannat to plainnat
 %
 %%%%%%%%%%%%%%%%%%
 
@@ -27,7 +26,7 @@
 %%%%%%%%%%%%%%%%%%
 \KOMAoptions{
     titlepage=false,
-    paper=210mm:297mm, % A4 dimensions
+    paper=210mm:297mm,          % A4 dimensions
     twoside=false, 
     twocolumn=false,
     parskip=false,              % space between paragraphs. "full" gives more space; "false" uses indentation instead
@@ -51,26 +50,26 @@
 % packages
 %%%%%%%%%%%%%%%%%%
 \usepackage[x11names,table,dvipsnames]{xcolor}
-\usepackage[hyphens]{url}   % simple URL typesetting
-\usepackage{footmisc}       % Make sure this is loaded before hyperref to avoid breaking footnote hyperlinks        
-\usepackage{hyperref}       % hyperlinks
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
-\usepackage{microtype}      % microtypography
-\usepackage{lipsum}         % lorem ipsum at the ready
-\usepackage{graphicx}       % for figures
-\usepackage{footmisc}       % makes symbol footnotes possible
+\usepackage[hyphens]{url}                       % simple URL typesetting
+\usepackage{footmisc}                           % Make sure this is loaded before hyperref to avoid breaking footnote hyperlinks        
+\usepackage{hyperref}                           % hyperlinks
+\usepackage{booktabs}                           % professional-quality tables
+\usepackage{nicefrac}                           % compact symbols for 1/2, etc.
+\usepackage{microtype}                          % microtypography
+\usepackage{lipsum}                             % lorem ipsum at the ready
+\usepackage{graphicx}                           % for figures
+\usepackage{footmisc}                           % makes symbol footnotes possible
 \usepackage{ragged2e}
-%\usepackage{changepage}     % detect odd/even pages
+%\usepackage{changepage}                        % detect odd/even pages
 \usepackage{array}
-\usepackage{float}          % get figures etc. to stay where they are with [H]
-%\usepackage{subfigure}      % \subfigures witin a \begin{figure}
-\usepackage[textsize=footnotesize]{todonotes} % enables \todo's for editors
-\usepackage{etoolbox}       % supplies commands like \AtBeginEnvironment and \atEndEnvironment
-\usepackage{ifdraft}        % switches on proofreading options in the draft mode
-\usepackage{tikz}           % for copyright statement
-\usepackage[absolute]{textpos}    % for copyright statement
-\usepackage[                % for copyright statement
+\usepackage{float}                              % get figures etc. to stay where they are with [H]
+%\usepackage{subfigure}                         % \subfigures witin a \begin{figure}
+\usepackage[textsize=footnotesize]{todonotes}   % enables \todo's for editors
+\usepackage{etoolbox}                           % supplies commands like \AtBeginEnvironment and \atEndEnvironment
+\usepackage{ifdraft}                            % switches on proofreading options in the draft mode
+\usepackage{tikz}                               % for copyright statement
+\usepackage[absolute]{textpos}                  % for copyright statement
+\usepackage[                                    % for copyright statement
     type={CC},
     modifier={by},
     version={4.0},
@@ -90,7 +89,7 @@
 \DeclareUnicodeCharacter{22EE}{}        % allow ⋮ character
 \usepackage{textalpha}                  % allows for greek characters in text e.g. \textalpha = α
 \usepackage{textcomp}                   % allows \textrightarrow etc.
-\usepackage{authblk} % for multiple authors and affiliations
+\usepackage{authblk}                    % for multiple authors and affiliations
 
 
 %%%%%%%%%%%%%%%%%%
@@ -99,7 +98,7 @@
 % Palatino font options
 \usepackage{mathpazo}                   % Palatino in LaTeX math
 \usepackage{tgpagella}                  % Palatino font
-\newcommand{\ltfamily}{\familydefault}% Makes sure LaTeX keeps using Palatino in Lithuanian 
+\newcommand{\ltfamily}{\familydefault}  % Makes sure LaTeX keeps using Palatino in Lithuanian 
 \addtokomafont{disposition}{\rmfamily}  % Palatino for titles etc.
 \setkomafont{descriptionlabel}{         % font for description lists    
     \usekomafont{captionlabel}\bfseries % Palatino bold
@@ -133,7 +132,7 @@
 %%%%%%%%%%%%%%%%%%
 % Title page
 %%%%%%%%%%%%%%%%%%
-\date{}                         % Get rid of date ... there should be a neater way to do this
+\date{}                                     % Get rid of date ... there should be a neater way to do this
 
 %set unit to be pagewidth and height, and increase inner margin of box
 \setlength{\TPHorizModule}{\paperwidth}\setlength{\TPVertModule}{\paperheight}
@@ -141,14 +140,14 @@
 
 % Below is taken from https://tex.stackexchange.com/questions/55813/how-to-add-copyright-notice-in-a-box-with-borders-at-bottom-of-first-page
 % Wout modified it using \usepackage{doclicense} (http://ctan.triasinformatica.nl/macros/latex/contrib/doclicense/doclicense.pdf)
-%define \copyrightstatement command for easier use
+% Define \copyrightstatement command for easier use
 \newcommand{\copyrightstatement}{
-    \begin{textblock}{0.84}(0.08,0.02)    % tweak here: {box width}(leftposition, rightposition)
+    \begin{textblock}{0.84}(0.08,0.02)      % tweak here: {box width}(leftposition, rightposition)
          \noindent
          \footnotesize
          \centering
-         \doclicenseIcon \the\year. % alternative: \doclicenseImage[imagewidth=4em] – Wout thinks icons are neater.
-         \doclicenseLongText % includes a link
+         \doclicenseIcon \the\year.         % alternative: \doclicenseImage[imagewidth=4em] – Wout thinks icons are neater.
+         \doclicenseLongText                % includes a link
          
     \end{textblock}
 }
@@ -243,11 +242,6 @@
     
 
 
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%
 % headerfooter
 %%%%%%%%%%%%%%%%%%
@@ -279,7 +273,7 @@
     \kern .5em % call this kernb
 }
 \renewcommand{\footnotelayout}{
-    \hspace{1.5em}    % space between footnote mark and footnote text
+    \hspace{1.5em}                              % space between footnote mark and footnote text
 }    
 \newcommand{\mytodo}[1]{\textcolor{red}{#1}}
 
