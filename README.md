@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6523761.svg)](https://doi.org/10.5281/zenodo.6523761)
 [![License](https://img.shields.io/github/license/DHBenelux/jDHBenelux-author-template)](https://github.com/DHBenelux/jDHBenelux-author-template/blob/main/LICENSE)
 
 # The jDHBenelux Author Template
