@@ -2,7 +2,7 @@
 
 # The jDHBenelux Author Template
 
-This repository contains the latest official versions of the [LaTeX](https://www.latex-project.org) template authors are required to use when they finalize their contribtions to the [DH Benelux Journal](https://journal.dhbenelux.org). The repository synchronizes with the corresponding easy-to-use and well-documented [Overleaf Template](https://www.overleaf.com/latex/templates/dh-benelux-journal-template/rcbfddyvmvpk) that provides authors with a low threshold environment for writing LaTeX – but can be used with any LaTeX compiler.
+This repository contains the latest official versions of the [LaTeX](https://www.latex-project.org) template that authors are required to use when they finalize their contribtions to the [DH Benelux Journal](https://journal.dhbenelux.org). The repository synchronizes with the corresponding easy-to-use and well-documented [Overleaf Template](https://www.overleaf.com/latex/templates/dh-benelux-journal-template/rcbfddyvmvpk) that provides authors with a low threshold environment for writing LaTeX – but can be used with any LaTeX compiler.
 
 Detailed documentation on how to use this template can be found [on the website of the Digital Humanities Journal](https://journal.dhbenelux.org/submission/preparing-the-final-version-of-your-manuscript/). 
 
@@ -20,6 +20,6 @@ Journal Website: [https://journal.dhbenelux.org](https://journal.dhbenelux.org)
 
 ## Credits
 
-The development of this template started from the [varianTeX](https://github.com/WoutDLN/varianTeX) template that was originally designed for [Variants](https://journals.openedition.org/variants/) (the Journal of the [European Society for Textual Scholarship](https://textualscholarship.eu)) by [Wout Dillen](https://github.com/WoutDLN). It took its current shape close collaboration with [Marijn Koolen](https://github.com/marijnkoolen) who played an invaluable part in simplifying the template further, adopting it to the needs of the DH Benelux Journal, and providing [detailed documentation for authors who wish to use it](https://journal.dhbenelux.org/submission/preparing-the-final-version-of-your-manuscript/).
+The development of this template started from the [varianTeX](https://github.com/WoutDLN/varianTeX) template that was originally designed for [Variants](https://journals.openedition.org/variants/) (the Journal of the [European Society for Textual Scholarship](https://textualscholarship.eu)) by [Wout Dillen](https://github.com/WoutDLN). It took its current shape in close collaboration with [Marijn Koolen](https://github.com/marijnkoolen) who played an invaluable part in simplifying the template further, adopting it to the needs of the DH Benelux Journal, and providing [detailed documentation for authors who wish to use it](https://journal.dhbenelux.org/submission/preparing-the-final-version-of-your-manuscript/).
 
 For the Journal, the resulting LaTeX files are compiled into PDF versions in [Overleaf](https://www.overleaf.com/), but their conversion into HTML versions is realized using the [dhbenelux-converter](https://github.com/fbkarsdorp/dhbenelux-converter) that was expressly developed for this purpose by [Folgert Karsdorp](https://github.com/fbkarsdorp) in collaboration with [Joris Van Zundert](https://github.com/jorisvanzundert). 
