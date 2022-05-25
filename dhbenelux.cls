@@ -105,30 +105,6 @@
 }
 \setkomafont{caption}{\footnotesize}    % smaller font size for captions
 
-
-%%%%%%%%%%%%%%%%%%
-% contributor
-%%%%%%%%%%%%%%%%%%
-% Title and Author of individual contributions
-\makeatletter
-% paper/review author = contributor
-\newcommand\contributor[1]{\renewcommand\@contributor{#1}}
-\newcommand\@contributor{}
-\newcommand\thecontributor{\@contributor} 
-% paper/review title = contribution
-\newcommand\contribution[1]{\renewcommand\@contribution{#1}}
-\newcommand\@contribution{}
-\newcommand\thecontribution{\@contribution}
-% short contributor for running header
-\newcommand\shortcontributor[1]{\renewcommand\@shortcontributor{#1}}
-\newcommand\@shortcontributor{}
-\newcommand\theshortcontributor{\@shortcontributor} 
-% short title for running header
-\newcommand\shortcontribution[1]{\renewcommand\@shortcontribution{#1}}
-\newcommand\@shortcontribution{}
-\newcommand\theshortcontribution{\@shortcontribution}
-\makeatother
-
 %%%%%%%%%%%%%%%%%%
 % Title page
 %%%%%%%%%%%%%%%%%%
@@ -153,8 +129,6 @@
 }
 
 \newcommand{\keywords}[1]{\textbf{Keywords:} #1}
-
-% TO DO: DH Benelux logo
 
 %%%%%%%%%%%%%%%%%%
 % Bibliography
@@ -181,20 +155,6 @@
 \AtEndEnvironment{quote}{\vskip 1em}
 
 \setkomafont{caption}{\footnotesize}
-
-
-% Keywords
-%\newenvironment{keywords}{
-%\setlength{\parindent}{0pt} \begin{adjustwidth}{2em}{2em}\footnotesize\emph{Keywords}: }{%
-%\vskip 1em\end{adjustwidth}
-%}{}
-
-% Review Abstract
-\newenvironment{reviewed}{% 
-\setlength{\parindent}{0pt}
-    \begin{adjustwidth}{2em}{2em}\footnotesize}{%
-\vskip 1em\end{adjustwidth}
-}{}
 
 % Motto
 \newenvironment{motto}{% 
@@ -256,14 +216,6 @@
 % no line under running title; cannot be \@z but needs to be 0pt
 \renewcommand{\headrulewidth}{0 pt} 
 
-% includes copyright statement in any \thispagestyle{contributiontitlepage}
-\fancypagestyle{papertitlepage}{
-    \fancyhead[C]{\scriptsize\centering\copyrightstatement}
-    \fancyfoot[C]{\centering\thepage}
-}
-
-
-
 %%%%%%%%%%%%%%%%%%
 % footnoteformat
 %%%%%%%%%%%%%%%%%%
@@ -276,9 +228,6 @@
     \hspace{1.5em}                              % space between footnote mark and footnote text
 }    
 \newcommand{\mytodo}[1]{\textcolor{red}{#1}}
-
-
-
 
 %%%%%%%%%%%%%%%%%%
 % Proofs
