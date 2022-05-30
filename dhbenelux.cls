@@ -76,6 +76,22 @@
 ]{doclicense}
 
 %%%%%%%%%%%%%%%%%%
+% fix Hyperref
+%%%%%%%%%%%%%%%%%%
+
+\usepackage[unicode=true,pdfusetitle,
+   bookmarks=true, 
+   bookmarksnumbered=false, 
+   bookmarksopen=false,
+   breaklinks=false, 
+   pdfborder={0 0 1}, 
+   backref=false, 
+   colorlinks=false]{hyperref}
+
+\hypersetup{pdfauthor={Wout Dillen}}
+
+
+%%%%%%%%%%%%%%%%%%
 % encoding
 %%%%%%%%%%%%%%%%%%
 \usepackage[L7x, T1]{fontenc}           % use 8-bit T1 fonts
@@ -134,7 +150,7 @@
 % Bibliography
 %%%%%%%%%%%%%%%%%%
 \usepackage[sort&compress,semicolon,authoryear]{natbib} % for citations
-\bibliographystyle{humannat}
+\bibliographystyle{plainnat}
 
 
 %%%%%%%%%%%%%%%%%%
