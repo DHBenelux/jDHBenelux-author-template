@@ -52,7 +52,6 @@
 \usepackage[x11names,table,dvipsnames]{xcolor}
 \usepackage[hyphens]{url}                       % simple URL typesetting
 \usepackage{footmisc}                           % Make sure this is loaded before hyperref to avoid breaking footnote hyperlinks        
-\usepackage{hyperref}                           % hyperlinks
 \usepackage{booktabs}                           % professional-quality tables
 \usepackage{nicefrac}                           % compact symbols for 1/2, etc.
 \usepackage{microtype}                          % microtypography
@@ -78,6 +77,16 @@
 %%%%%%%%%%%%%%%%%%
 % fix Hyperref
 %%%%%%%%%%%%%%%%%%
+
+% for correct treatment of hyperlinks
+% pdfusetitle and other options are loaded because hyperref was giving a lot of warnings. 
+% this fix found at: https://albertsk.org/2019/10/10/how-to-avoid-warning-messages-from-hyperref-package-in-latex/
+
+% this fix resolved most of the warnings in jDHBenelux v4
+% except: three warnings remained in Zandhuis (2022) in that issue
+% since these errors are benign, I decided to ignore the remaining ones for now 
+
+% // WD
 
 \usepackage[unicode=true,pdfusetitle,
    bookmarks=true, 
