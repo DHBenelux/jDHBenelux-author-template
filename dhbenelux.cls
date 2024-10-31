@@ -6,7 +6,8 @@
 % - v1.1: 2021/07/01
 % - v2.0: 2022/05/06
 % - v2.1: 2024/10/31 -- Happy Halloween!
-%
+% - v2.1.0: 2024/10/31
+% - v?
 %
 % Revision history:
 %
@@ -15,10 +16,15 @@
 % - v1.1 -> v2.0
 %       automatically archives new releases in Zenodo
 %       changelog: https://github.com/DHBenelux/jDHBenelux-author-template/releases/tag/v2.0
-% - v1.1 -> v1.2
+% - v2.0 -> v2.1
 %       hyperref package moved up to fix hyperxmp issue
 %       added lmodern to fix palatino issue with missing font shapes
 %       removed fancyhdr which was no longer used, and caused issues with KOMAfont
+% - v2.1 -> v2.1.0
+%       no changes in the repository, only fixed Zenodo synchronisation
+% - v2.1.0 -> v?
+%       fixed small typo in revision history, and added v2.1.0 update
+%       ...
 %%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
