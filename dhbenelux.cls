@@ -18,7 +18,7 @@
 % - v1.1 -> v1.2
 %       hyperref package moved up to fix hyperxmp issue
 %       added lmodern to fix palatino issue with missing font shapes
-%       removed fancyhdr which was no longer used, and caused issues ith KOMAfont
+%       removed fancyhdr which was no longer used, and caused issues with KOMAfont
 %%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
